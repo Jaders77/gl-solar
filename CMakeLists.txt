@@ -27,6 +27,7 @@ target_include_directories(gl_solar PRIVATE
 
 target_link_libraries(gl_solar PRIVATE
    glfw
+   glu32
    ${OPENGL_gl_LIBRARY}
    ${OPENGL_glu_LIBRARY}
    ${GLFW_LIBRARIES}

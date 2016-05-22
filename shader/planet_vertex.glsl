@@ -1,4 +1,4 @@
-#version 450 core
+#version 420 core
 #define PRECISION 0.000001
 
 uniform mat4 look_matrix;

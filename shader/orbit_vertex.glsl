@@ -1,4 +1,4 @@
-#version 450 core
+#version 420 core
 
 uniform mat4 look_matrix;
 uniform mat4 proj_matrix;

@@ -90,30 +90,30 @@ void Space::buildSolarSystem()
 {
 	mTextureManager.loadTextureSkyBox("res/milkywayleft.png", "res/milkywayfront.png", "res/milkywayright.png", "res/milkywaytop.png", "res/milkywaybottom.png", "res/milkywayback.png", mTextureSkyBox);
 	GLuint lTexture = 0;
-	if (mTextureManager.loadTexture("res/sun2.png", lTexture)) {
+	if (mTextureManager.loadTexture("res/sun_2k.jpg", lTexture)) {
 		CPlanetPtr lSunPtr(std::make_shared<Planet>("Sun", 695508.f, 0.f, 0.f, 0.f, 0.f, 7.25f, -26.f, lTexture));
 		addPlanetarySystem(lSunPtr);
 
-		if (mTextureManager.loadTexture("res/mercury_hd.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/mercury_2k.jpg", lTexture)) {
 			CPlanetPtr MercuryPtr(std::make_shared<Planet>("Mercury", 2439.7f, 57909227.f, 0.2056f, 7.005f, 87.9693f, 0.0352f, 58.6462f, lTexture));
 			lSunPtr->addSatellite(MercuryPtr);
 		}
 
-		if (mTextureManager.loadTexture("res/venus_hd.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/venus_2k.jpg", lTexture)) {
 			CPlanetPtr lVenusPtr(std::make_shared<Planet>("Venus", 6051.8f, 108208475.f, 0.0068f, 3.39f, 224.701f, 177.36f, -243.018f, lTexture));
 			lSunPtr->addSatellite(lVenusPtr);
 		}
 
-		if (mTextureManager.loadTexture("res/earth_daymap_hd.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/earth_daymap_2k.jpg", lTexture)) {
 			CPlanetPtr lEarthPtr(std::make_shared<Planet>("Earth", 6371.f, 149598262.f, 0.0167f, 0.f, 365.2569f, 23.4393f, 0.9972f, lTexture));
 			lSunPtr->addSatellite(lEarthPtr);
-			if (mTextureManager.loadTexture("res/moon_hd.png", lTexture)) {
+			if (mTextureManager.loadTexture("res/moon_2k.jpg", lTexture)) {
 				CPlanetPtr MoonPtr(std::make_shared<Planet>("Moon", 1737.f, 384400.f, 0.0549f, 5.16f, 27.322f, 6.68f, 27.322f, lTexture));
 				lEarthPtr->addSatellite(MoonPtr);
 			}
 		}
 
-		if (mTextureManager.loadTexture("res/mars_hd.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/mars_2k.jpg", lTexture)) {
 			CPlanetPtr lMarsPtr(std::make_shared<Planet>("Mars", 3389.5f, 227943824.f, 0.0934f, 1.8506f, 686.9601f, 25.19f, 1.0259f, lTexture));
 			lSunPtr->addSatellite(lMarsPtr);
 			if (mTextureManager.loadTexture("res/phobos.png", lTexture)) {
@@ -126,32 +126,32 @@ void Space::buildSolarSystem()
 			}
 		}
 
-		if (mTextureManager.loadTexture("res/ceres.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/ceres_2k.jpg", lTexture)) {
 			CPlanetPtr lCeresPtr(std::make_shared<Planet>("Ceres", 476.2f, 413690250.f, 0.0797f, 10.59f, 1679.819f, 3.f, 0.378f, lTexture));
 			lSunPtr->addSatellite(lCeresPtr);
 		}
 
 		//Todo: asteroids
 
-		if (mTextureManager.loadTexture("res/jupiter_2k.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/jupiter_2k.jpg", lTexture)) {
 			CPlanetPtr lJupiterPtr(std::make_shared<Planet>("Jupiter", 69911.f, 778340821.f, 0.0484f, 1.304f, 4335.3545f, 3.12f, 0.4135f, lTexture));
 			lSunPtr->addSatellite(lJupiterPtr);
 			// Todo: satellites
 		}
 
-		if (mTextureManager.loadTexture("res/saturn_2k.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/saturn_2k.jpg", lTexture)) {
 			CPlanetPtr lSaturnPtr(std::make_shared<Planet>("Saturn", 58232.f, 1426666422.f, 0.0538f, 2.4845f, 10757.7365f, 26.73f, 0.444f, lTexture));
 			lSunPtr->addSatellite(lSaturnPtr);
 			// Todo: satellites
 		}
 
-		if (mTextureManager.loadTexture("res/uranus_2k.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/uranus_2k.jpg", lTexture)) {
 			CPlanetPtr lUranusPtr(std::make_shared<Planet>("Uranus", 25362.f, 2870658186.f, 0.0472f, 0.7725f, 30687.15f, 97.77f, -0.7183f, lTexture));
 			lSunPtr->addSatellite(lUranusPtr);
 			// Todo: satellites
 		}
 
-		if (mTextureManager.loadTexture("res/neptune_2k.png", lTexture)) {
+		if (mTextureManager.loadTexture("res/neptune_2k.jpg", lTexture)) {
 			CPlanetPtr lNeptunePtr(std::make_shared<Planet>("Neptune", 24622.f, 4498396441.f, 0.0086f, 1.7692f, 60224.9036f, 28.3f, 0.6712f, lTexture));
 			lSunPtr->addSatellite(lNeptunePtr);
 			// Todo: satellites

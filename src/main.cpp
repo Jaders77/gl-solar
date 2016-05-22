@@ -112,7 +112,7 @@ int main(int argc, char** argv)
 
 		// Compute position
 		double lTime = glfwGetTime() - TimeStart;
-		lSpace.computePosition(lTime * .1);
+		lSpace.computePosition(lTime * .01);
 
 		// Compute mouse action
 		if (glfwGetMouseButton(lGlfwWindow, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) {
