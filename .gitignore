@@ -1,28 +1,12 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+CMakeFiles/*
+third_party/glfw/*
+third_party/glm/*
+Win32/*
+gl_solar.dir/*
+Debug/*
+.vs/*
+*.cmake
+CmakeCache.txt
+*.sln
+*.vcxproj
+*.vcxproj.filters
